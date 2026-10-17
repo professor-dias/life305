@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LIFE 305 — Living Independently with Freedom and Elegance</title>
+<meta name="description" content="LIFE 305 is an AI-driven precision-prevention study and mobile app for transgender women in South Florida, developed at Florida International University.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav" id="site-nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">LIFE <span>305</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav-menu" class="nav-menu">
+      <a href="#problem">The Problem</a>
+      <a href="#causes">Five Causes</a>
+      <a href="#south-florida">South Florida</a>
+      <a href="#aims">Study Aims</a>
+      <a href="#findings">Findings</a>
+      <a href="#app">The App</a>
+      <a href="#prototype">Prototype</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- 1. Hero (compact) -->
+  <section class="hero" id="hero">
+    <div class="hero-photo">
+      <img src="assets/images/hero-portrait.jpg" alt="Portrait photograph used in the LIFE 305 study presentation, evoking the strength and dignity at the center of this work.">
+    </div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-subtitle"><span class="letter-highlight">L</span>iving <span class="letter-highlight">I</span>ndependently with <span class="letter-highlight">F</span>reedom and <span class="letter-highlight">E</span>legance in <span class="letter-highlight">305</span></p>
+        <h1 class="hero-title">LIFE <span class="title-accent">305</span></h1>
+        <p class="hero-descriptor">Development of a <span class="desc-highlight">culturally tailored,</span> AI-driven, precision-prevention, <span class="desc-highlight">mobile application</span> for <span class="desc-highlight">transgender women</span> in <span class="desc-highlight">South Florida</span>.</p>
+        <div class="hero-byline">
+          <p>A dissertation by <span class="name-highlight">Noel Dias</span></p>
+          <p>Committee Chair: <span class="name-highlight">Dr. Jessy Dévieux</span></p>
+          <p>Mentors: <span class="name-highlight">Elena Cyrus</span>, <span class="name-highlight">Anshul Saxena</span>, <span class="name-highlight">Mariana Sanchez</span>, <span class="name-highlight">Richard Beaulaurier</span></p>
+        </div>
+        <p class="hero-affiliation">Florida International University &middot; Department of Health Promotion and Disease Prevention</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 + 3. The Problem & Five Causes (combined to cut a full section) -->
+  <section class="section">
+    <div class="container container-wide">
+
+      <div id="problem">
+        <p class="eyebrow">The Problem</p>
+        <h2>Preventable Premature Mortality Among Transgender Women</h2>
+        <p class="lede">
+          Between 2017 and 2023, 263 transgender people lost their lives to violent hate crimes in the United States. Around 193 of those deaths involved a firearm (McLellan et al., 2026). Over 60% of those victims were Black transgender women. Additionally, Black and Latina transgender women account for more than 80% of HIV cases in this population nationally (CDC, 2024).
+        </p>
+        <p class="lede">
+          Substance use is another risk factor leading to overdose and early mortality. Barriers are often multi-level, fueled by discrimination, social rejection, lack of opportunities, homelessness, and poor mental health, leading to death by suicide or chronic disease / poor quality-of-life.
+        </p>
+        <p class="lede">
+          Ultimately, transgender women are losing their lives early, and disproportionately. Five causes drive that mortality. All five are preventable.
+        </p>
+      </div>
+
+      <div id="causes" class="causes-block">
+
+        <div class="tabs" id="causes-tabs">
+          <div class="tabs-nav" role="tablist" aria-label="Five leading causes of mortality">
+            <button class="tab-btn is-active" type="button" role="tab" aria-selected="true" aria-controls="panel-suicide" id="tab-suicide" data-target="suicide">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c4.97 0 9-3.5 9-8.5S16.97 4 12 4s-9 3.5-9 8.5c0 1.9.6 3.65 1.62 5.1L3 21l4.4-1.62A9.3 9.3 0 0 0 12 21z"/><line x1="8.5" y1="12" x2="15.5" y2="12"/></svg>
+              <span>Suicide &amp; Mental Health</span>
+            </button>
+            <button class="tab-btn" type="button" role="tab" aria-selected="false" aria-controls="panel-substance" id="tab-substance" data-target="substance">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v4l4 9a2 2 0 0 1-2 3H7a2 2 0 0 1-2-3l4-9V3z"/><line x1="8" y1="14" x2="16" y2="14"/></svg>
+              <span>Substance Use</span>
+            </button>
+            <button class="tab-btn" type="button" role="tab" aria-selected="false" aria-controls="panel-violence" id="tab-violence" data-target="violence">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-4z"/><line x1="12" y1="8" x2="12" y2="13"/><circle cx="12" cy="16.3" r=".6" fill="currentColor" stroke="none"/></svg>
+              <span>Violence &amp; Homicide</span>
+            </button>
+            <button class="tab-btn" type="button" role="tab" aria-selected="false" aria-controls="panel-hiv" id="tab-hiv" data-target="hiv">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+              <span>HIV &amp; AIDS</span>
+            </button>
+            <button class="tab-btn" type="button" role="tab" aria-selected="false" aria-controls="panel-chronic" id="tab-chronic" data-target="chronic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 8.6c0 5-8.8 10.4-8.8 10.4S3.2 13.6 3.2 8.6a4.6 4.6 0 0 1 8.8-2 4.6 4.6 0 0 1 8.8 2z"/></svg>
+              <span>Chronic Disease / Poor QOL</span>
+            </button>
+          </div>
+
+          <div class="tab-panels">
+            <div class="tab-panel is-active" role="tabpanel" id="panel-suicide" aria-labelledby="tab-suicide">
+              <p>Transgender women report high rates of anxiety, depression, and suicidal ideation. Chronic minority stress, anti-trans stigma, and limited social support compound psychiatric burden. Transphobia and social rejection are direct drivers of suicidal ideation in this population.</p>
+              <p class="cause-source">Sources: Wanta et al., 2019; Yang et al., 2015</p>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="panel-substance" aria-labelledby="tab-substance" hidden>
+              <p>Substance use, particularly methamphetamine and crack/cocaine, is strongly linked to HIV acquisition and condomless anal sex among transgender women. Risk increases when substance use intersects with survival sex work.</p>
+              <p class="cause-source">Sources: Hsiang et al., 2022; Cyrus et al., 2023</p>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="panel-violence" aria-labelledby="tab-violence" hidden>
+              <p>Most transgender homicides are hate-motivated. Many go unrecorded: law enforcement agencies frequently misclassify victims when gender identity is not documented at the scene, meaning official counts understate the true toll. Violence is concentrated in the South.</p>
+              <p class="cause-source">Sources: McLellan et al., 2026; Everytown Research &amp; Policy, 2024</p>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="panel-hiv" aria-labelledby="tab-hiv" hidden>
+              <p>Transgender women are among the groups at highest risk for HIV, yet they remain among the least likely to access prevention and treatment. Medical mistrust, transphobia in clinical settings, and structural barriers keep many from seeking care even when it is available. HIV does not cause early death on its own. Delayed diagnosis and interrupted treatment do.</p>
+              <p class="cause-source">Sources: Maragh-Bass et al., 2024; Holder et al., 2019; CDC, 2024</p>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="panel-chronic" aria-labelledby="tab-chronic" hidden>
+              <p>Chronic stress, limited social support, financial hardship, and barriers to gender-affirming care compound poor physical health outcomes. Discrimination limits access to employment, housing, and healthcare, driving a cycle of structural vulnerability and preventable illness.</p>
+              <p class="cause-source">Sources: Fredriksen Goldsen et al., 2022; Hobfoll, 1989</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. Why South Florida? (mirrors the hero concept: photo left, text right) -->
+  <section class="hero hero--mirror" id="south-florida">
+    <div class="hero-photo">
+      <img src="assets/images/south-florida-portrait.jpg" alt="Portrait photograph of two transgender women, part of the South Florida community this study serves.">
+    </div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Why South Florida?</p>
+        <h2>Addressing Disparity, and Actioning Change</h2>
+        <p>Transgender lives are at the center of a national debate, especially in Florida right now, over: gender-affirming care for children, bathrooms, sports, and a lot more (Florida SB 254, 2023; Florida HB 1475, 2021; ACLU, 2024; Movement Advancement Project, 2024).</p>
+        <p>This study does not engage in any of that. It focuses on what happens after the debate.</p>
+        <p>Adult transgender women, 18 and older, most of who are American citizens and residents, are living with the consequences. Many are sleeping outside tonight in Miami-Dade, Broward, and Palm Beach. They cannot afford an apartment. Many do not know where the next meal will coming from (Marcus, 2024).</p>
+        <p>These transwomen did not start this fight. But, they are living inside it.</p>
+        <p>South Florida&rsquo;s tri-county region: Miami-Dade, Broward, and Palm Beach, carries one of the highest HIV prevalence rates in the country and a large transgender population with substantial barriers to affirming care (Holder et al., 2019; Cyrus et al., 2021; Maragh-Bass et al., 2024). Little research has examined how transgender women in this region use digital health tools (Bonato et al., 2025; Shboul et al., 2023; Raile, 2024). No AI-driven, culturally tailored digital health tool has been developed and tested to improve access to care for transgender women in South Florida.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Study Aims -->
+  <section class="section" id="aims">
+    <div class="container container-wide">
+      <p class="eyebrow">Study Aims</p>
+      <div class="aims-grid">
+
+        <article class="aim-card">
+          <div class="aim-number">AIM 1</div>
+          <p>Analyze existing <b>quantitative</b> and <b>qualitative</b> data from the <b>TRUST</b> study and the <b>SHARC Florida Cohort Study Wave 3</b> to identify <b>predictors</b> associated with <b>preventable premature mortality</b> among <b>transgender women</b> in Florida and develop a <b>precision-prevention intervention framework</b>.</p>
+        </article>
+
+        <article class="aim-card">
+          <div class="aim-number">AIM 2</div>
+          <p>Conduct <b>one-on-one qualitative in-depth interviews</b> with <b>transgender women (N=14) and a Community Advisory Board (N=6)</b> to refine the intervention framework and co-design content for the AI-driven precision-prevention mobile application.</p>
+        </article>
+
+        <article class="aim-card">
+          <div class="aim-number">AIM 3</div>
+          <p><b>Develop</b> the AI-driven precision-prevention <b>mobile application</b> and <b>pretest</b> its feasibility, usability, and acceptability among <b>transgender women (N = 12)</b>.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Early Findings: linear connection diagram -->
+  <section class="section section-dark" id="findings">
+    <div class="container container-wide">
+      <p class="eyebrow">Early Findings</p>
+      <h2>How the Five Causes Connect</h2>
+      <p class="lede">
+        The five leading causes of premature mortality do not act alone. Click or hover a cause or a factor below to see how they link.
+      </p>
+
+      <div class="linear-diagram" id="linear-diagram">
+        <div class="ld-row ld-row--causes" id="ld-causes">
+          <button class="ld-node ld-node--cause" type="button" data-id="suicide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c4.97 0 9-3.5 9-8.5S16.97 4 12 4s-9 3.5-9 8.5c0 1.9.6 3.65 1.62 5.1L3 21l4.4-1.62A9.3 9.3 0 0 0 12 21z"/><line x1="8.5" y1="12" x2="15.5" y2="12"/></svg>
+            <span>Suicide / Mental Health</span>
+          </button>
+          <button class="ld-node ld-node--cause" type="button" data-id="substance">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v4l4 9a2 2 0 0 1-2 3H7a2 2 0 0 1-2-3l4-9V3z"/><line x1="8" y1="14" x2="16" y2="14"/></svg>
+            <span>Substance Use</span>
+          </button>
+          <button class="ld-node ld-node--cause" type="button" data-id="violence">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-4z"/><line x1="12" y1="8" x2="12" y2="13"/><circle cx="12" cy="16.3" r=".6" fill="currentColor" stroke="none"/></svg>
+            <span>Violence / Homicide</span>
+          </button>
+          <button class="ld-node ld-node--cause" type="button" data-id="hiv">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+            <span>HIV / AIDS</span>
+          </button>
+          <button class="ld-node ld-node--cause" type="button" data-id="chronic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 8.6c0 5-8.8 10.4-8.8 10.4S3.2 13.6 3.2 8.6a4.6 4.6 0 0 1 8.8-2 4.6 4.6 0 0 1 8.8 2z"/></svg>
+            <span>Chronic Disease / Poor QOL</span>
+          </button>
+        </div>
+
+        <svg class="ld-lines" id="ld-lines" aria-hidden="true"></svg>
+
+        <div class="ld-row ld-row--factors" id="ld-factors">
+          <button class="ld-node ld-node--risk" type="button" data-id="homelessness" data-type="risk" data-links="substance,violence,chronic">Homelessness</button>
+          <button class="ld-node ld-node--risk" type="button" data-id="stigma" data-type="risk" data-links="suicide,substance,violence,hiv,chronic">Stigma / Transphobia</button>
+          <button class="ld-node ld-node--risk" type="button" data-id="healthcare_access" data-type="risk" data-links="hiv,chronic,suicide">Lack of affirming healthcare</button>
+          <button class="ld-node ld-node--risk" type="button" data-id="survival_sex" data-type="risk" data-links="substance,hiv,violence">Survival sex work</button>
+          <button class="ld-node ld-node--risk" type="button" data-id="medical_mistrust" data-type="risk" data-links="hiv,suicide,chronic">Medical mistrust</button>
+          <button class="ld-node ld-node--risk" type="button" data-id="criminal_legal" data-type="risk" data-links="violence,suicide">Criminal-legal involvement</button>
+          <button class="ld-node ld-node--protective" type="button" data-id="education" data-type="protective" data-links="suicide,chronic">Education / health literacy</button>
+          <button class="ld-node ld-node--protective" type="button" data-id="social_support" data-type="protective" data-links="suicide,substance">Social support / chosen family</button>
+          <button class="ld-node ld-node--protective" type="button" data-id="affirming_care" data-type="protective" data-links="hiv,chronic,suicide">Access to gender-affirming care</button>
+          <button class="ld-node ld-node--protective" type="button" data-id="housing_stability" data-type="protective" data-links="substance,violence,chronic">Housing stability</button>
+          <button class="ld-node ld-node--protective" type="button" data-id="community_connection" data-type="protective" data-links="suicide,substance">Community connection</button>
+        </div>
+      </div>
+
+      <div class="ld-info" id="ld-info" aria-live="polite">
+        <p class="ld-info-default">Click or hover a node above to see how it connects.</p>
+      </div>
+
+      <div class="ld-legend">
+        <span><i class="ld-dot ld-dot--cause"></i> Cause of mortality</span>
+        <span><i class="ld-dot ld-dot--risk"></i> Risk factor</span>
+        <span><i class="ld-dot ld-dot--protective"></i> Protective factor</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. The LIFE 305 App -->
+  <section class="section" id="app">
+    <div class="container">
+      <p class="eyebrow">The LIFE 305 App</p>
+      <h2>What is LIFE 305?</h2>
+      <p class="lede">
+        LIFE 305 is an AI-driven, precision-prevention mobile application built specifically for transgender women in South Florida. It combines a personalized risk-profiling screener, AI chatbot coaching, micro-learning modules, and geo-linked referrals to connect each woman to the resources most relevant to her. Every interaction is culturally tailored, trauma-informed, and affirming.
+      </p>
+
+      <h3 class="subsection-heading">Built on three frameworks</h3>
+      <div class="theory-list">
+        <div class="theory-card">
+          <span class="theory-index">1</span>
+          <div class="theory-body">
+            <h4>Conservation of Resources (COR) Theory</h4>
+            <p>Frames health burden as the loss of social, psychological, and material resources under chronic stress; guides profiling of risk and need.</p>
+          </div>
+        </div>
+        <div class="theory-card">
+          <span class="theory-index">2</span>
+          <div class="theory-body">
+            <h4>Social Cognitive Theory</h4>
+            <p>Explains behavior change through personal, behavioral, and environmental factors; guides skill-building, self-efficacy coaching, and access.</p>
+          </div>
+        </div>
+        <div class="theory-card">
+          <span class="theory-index">3</span>
+          <div class="theory-body">
+            <h4>UTAUT</h4>
+            <p>Guides the design and evaluation of the AI-driven components, to ensure participants adopt and keep using the app.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. App Prototype (standalone, dark section) -->
+  <section class="section section-dark" id="prototype">
+    <div class="container">
+      <p class="eyebrow">App Prototype</p>
+      <h2>A Closer Look Inside LIFE 305</h2>
+      <p class="lede">
+        Daily micro-nudges that turn into real-world steps, an AI coach to support and motivate, and geo-linked referrals from providers who are trans-affirmative and care.
+      </p>
+
+      <div class="prototype-wrap">
+        <div class="phone-mockup phone-mockup--lg">
+          <div class="phone-screen">
+            <div class="phone-status-bar"></div>
+            <div class="phone-tabs" id="phone-tabs">
+              <button class="phone-tab is-active" type="button" data-view="dashboard">Home</button>
+              <button class="phone-tab" type="button" data-view="coach">Coach</button>
+              <button class="phone-tab" type="button" data-view="learn">Learn</button>
+              <button class="phone-tab" type="button" data-view="referrals">Nearby</button>
+            </div>
+
+            <div class="phone-view is-active" data-view="dashboard">
+              <div class="phone-card">
+                <p class="phone-card-label">Your path</p>
+                <p class="phone-card-value">Relatively Protected</p>
+              </div>
+              <div class="phone-row">Today's micro-nudge</div>
+              <div class="phone-row">Talk to your coach</div>
+              <div class="phone-row">Affirming care near you</div>
+            </div>
+
+            <div class="phone-view" data-view="coach" hidden>
+              <div class="chat-bubble chat-bubble--bot">How are you feeling about your appointment this week?</div>
+              <div class="chat-bubble chat-bubble--user">Nervous, but ready.</div>
+              <div class="chat-bubble chat-bubble--bot">That's okay. Let's walk through what to expect, together.</div>
+              <div class="chat-bubble chat-bubble--bot">You've got this. I'm right here with you. 💛</div>
+            </div>
+
+            <div class="phone-view" data-view="learn" hidden>
+              <div class="nugget-card">
+                <p class="nugget-label">Today's micro-nudge</p>
+                <p class="nugget-title">Booking Your First Appointment</p>
+                <p class="nugget-text">A short, judgment-free walkthrough: what to say, what to bring, and how to ask for the care you deserve.</p>
+                <div class="nugget-progress">
+                  <div class="nugget-progress-track"><span style="width: 60%;"></span></div>
+                  <p class="nugget-progress-label">3 of 5 nudges this week 🔥</p>
+                </div>
+                <button class="nugget-btn" type="button">Mark as Learned</button>
+              </div>
+            </div>
+
+            <div class="phone-view" data-view="referrals" hidden>
+              <p class="referrals-intro">Verified, trans-affirming care, close to you.</p>
+              <div class="referral-card">
+                <p class="referral-name">South Florida Trans Wellness Clinic</p>
+                <p class="referral-meta">📍 2.1 mi &middot; Primary &amp; gender-affirming care</p>
+                <span class="referral-badge">Trans-affirming provider</span>
+              </div>
+              <div class="referral-card">
+                <p class="referral-name">Pridelines Youth &amp; Family Center</p>
+                <p class="referral-meta">📍 3.4 mi &middot; Peer support &amp; case management</p>
+                <span class="referral-badge">Community partner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="prototype-caption">The four views of the LIFE 305 prototype: Home, Coach, Learn, and Nearby</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-title">LIFE 305 Study</p>
+    <p>Florida International University &middot; Department of Health Promotion and Disease Prevention</p>
+    <p class="footer-pi"><b>Noel Dias</b>, PhD Candidate &middot; Contact: <a href="mailto:nsing044@fiu.edu">nsing044@fiu.edu</a></p>
+    <p class="footer-copyright">&copy; 2026 noeldias. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="assets/js/network.js"></script>
+<script>
+// Mobile nav toggle
+(function () {
+  var toggle = document.getElementById('nav-toggle');
+  var menu = document.getElementById('nav-menu');
+  toggle.addEventListener('click', function () {
+    var isOpen = menu.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  menu.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      menu.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+
+// Sticky nav shadow on scroll
+(function () {
+  var nav = document.getElementById('site-nav');
+  window.addEventListener('scroll', function () {
+    nav.classList.toggle('is-scrolled', window.scrollY > 10);
+  }, { passive: true });
+})();
+
+// Causes tabs
+(function () {
+  var tabs = document.querySelectorAll('#causes-tabs .tab-btn');
+  var panels = document.querySelectorAll('#causes-tabs .tab-panel');
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      tabs.forEach(function (t) {
+        t.classList.remove('is-active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      panels.forEach(function (p) { p.classList.remove('is-active'); p.hidden = true; });
+
+      tab.classList.add('is-active');
+      tab.setAttribute('aria-selected', 'true');
+      var panel = document.getElementById('panel-' + tab.dataset.target);
+      panel.classList.add('is-active');
+      panel.hidden = false;
+    });
+  });
+})();
+
+// Phone prototype tabs
+(function () {
+  var tabs = document.querySelectorAll('#phone-tabs .phone-tab');
+  var views = document.querySelectorAll('.phone-view');
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      tabs.forEach(function (t) { t.classList.remove('is-active'); });
+      views.forEach(function (v) { v.classList.remove('is-active'); v.hidden = true; });
+      tab.classList.add('is-active');
+      var view = document.querySelector('.phone-view[data-view="' + tab.dataset.view + '"]');
+      view.classList.add('is-active');
+      view.hidden = false;
+    });
+  });
+})();
+</script>
+</body>
+</html>
